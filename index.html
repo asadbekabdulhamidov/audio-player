@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Audio Player</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <audio src=""></audio>
+    <div class="musicPlayer">
+      <div class="container">
+        <div class="player__header">
+          <img src="./image/icons/header-arrow.svg" alt="arrow prev" />
+          <h2><span>Playing From</span> my songs</h2>
+          <img src="./image/icons/three-dots-header.svg" alt="" />
+        </div>
+        <div class="img-box" id="imgBox">
+          <img class="mainImg" src="./author/qoshiq1.jpg" alt="" />
+        </div>
+
+        <div class="music-player-name">
+          <img src="./image/icons/plus.png" alt="" />
+          <h2 class="music-name">
+            <span>Slave to the Rhythm</span> Michael Jackson
+          </h2>
+          <div><i class="fa-regular fa-heart"></i></div>
+        </div>
+
+        <div class="music-progress">
+          <p class="progress"><i id="audioProgres"></i></p>
+          <div class="times">
+            <p>0:00</p>
+            <p>0:00</p>
+          </div>
+        </div>
+
+        <div class="controller">
+          <div class="item repeat">
+            <i class="fa-solid fa-repeat" id="retry"></i>
+          </div>
+          <div class="item prev"><i class="fa-solid fa-backward"></i></div>
+          <div class="item play"><i class="fa-solid fa-play"></i></div>
+          <div class="item next"><i class="fa-solid fa-forward"></i></div>
+          <div class="item mixed">
+            <i class="fa-solid fa-shuffle" id="shuffle"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./js/app.js"></script>
+</html>
